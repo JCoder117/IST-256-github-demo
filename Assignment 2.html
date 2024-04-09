@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title> Assignment two</title>
+</head>
+<body>
+<h1 style="text-align:center;"> TIMER CHALLENGE</h1>
+<h5 style="text-align:center;">Please press the "Start" button to play!</h5>
+<h5 style="text-align:center;">Goal: Click the start button to begin and click the stop when close to 3 seconds!!! </h5>
+<br/>
+<br/>
+
+<button type="button" class="btn btn-lg btn-success" id="button" onClick="firstClick()">Start Button</button>
+<p></p>
+<p id="resultTarget"></p>
+<p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expaneded="false" aria-controls="collapseExample" Attempts/>Results of attempts
+    </button>
+</p>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+         <p id-="totalA"></p>
+        <p id="totalInfo"></p>
+    </div>
+  <div class="card card-body">
+      <table class="table" id="resultTable">
+          <th>
+              <tr>
+                  <th>Attempts taken</th>
+                    <th> Start Time</th>
+                    <th>End Time</th>
+                    <th>Distance off of target</th>
+              </tr>
+          </th>
+          <tbody id="fullTable"></tbody>
+      </table>
+  </div>
+</div>
+    <script>
+        const limit = 3000 ; //Target time in seconds 1000 milliseconds = 3 seconds
+        let stopTime;
+        let startTime;
+        //values maximum,minimum
+        let max = 0;
+        let min = 0;
+        let sum = 0;
+        let average;
+        let n = 1;
+        let results = [];
+
+
+        //Function for clicking the button
+        function firstClick() {
+            if (button.innerHTML == "Start") {
+                button.innerHTML = "Stop";
+                startTime = Date.now();
+            } else {
+                button.innerHTML = "Start";
+                stopTime = Date.now();
+                let timeElapsed = (stopTime - startTime)
+
+                let change = Math.abs(limit - timeElapsed);
+
+                //This code will display the colors signifying the closeness of your response time. If the button is clicked in exactly 3 seconds green will appear.
+                // If the button is clicked blue the click is within the +/- .2 range as requested. If its yellow then the button was clicked within .5 seconds of the 3 second mark. If its red then you clicked passed the
+                // 3 seconds
+
+                if(0 < change && change < 100) {
+                    document.getElementById("button").style.backgroundColor = '#0ca423';
+                } else if (100 < change && change < 300) {
+                    document.getElementById("button").style.backgroundColor = '#2b55ea';
+                } else if (300 < change && change < 500) {
+                    document.getElementById("button").style.backgroundColor = '#fadf33';
+                } else if (change >= 500) {
+                    document.getElementById("button").style.backgroundColor = '#ff0000';
+                }
+                let startingTime = new Date(startTime).toString();
+                let endTime = new Date(stopTime).toString();
+
+                //This displays the times (Start & end time) to display the time it took within the table
+                $("#fullTable").append("<tr><th scope='row'>" + n + "</th><td>" + startingTime + "</td><td>" + endTime + "</td><td>" + change + "ms</td></tr>")
+
+                results.push(change);
+
+                if (change < min || min == 0) {
+                    min = change;
+                    }
+
+                if (change > max || max == 0) {
+                    max = change;
+                }
+
+                sum += change;
+
+                average = sum / n;
+
+                $("#totalInfo").text("Min: " + min / 1000 + "Seconds / Max: " + max / 1000 + " Seconds / Average: " + average / 1000 + " Seconds");
+                $("#totalA").text("Your total attempts are " + n + ".")
+                $("#resultTarget").text(" You are off by " + change + " Milliseconds")
+
+                n += 1;
+
+
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script scr="https://code.highcharts.com/highcharts.js"></script>
+        <!-- High chart above as requested-->
+</body>
+
+</html>
