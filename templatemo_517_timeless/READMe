@@ -1,0 +1,31 @@
+Luxscape
+
+Original Website Template: https://www.free-css.com/free-css-templates/page252/timeless
+
+Changes Made:
+1: Changed the original website page
+2: Added Font Awesome Icons
+3: Created Signin area utilizing forms
+4: Added my own log
+5: Implemented a navbar
+6: Created underline effect when hovering over text
+7: Created color change effect when hovering over the text
+8: Created a checkout system in java script
+9: Changed all items within my navbar
+10: Implemented a new video and text in correlation to the video
+11: Created unique <hr> tags
+12: Imported bootstrap card holder
+13: Changed bootstrap card holder pictures and buttons/button color
+14: Deployed an on hover for cursor pointer to display pointer finger on button and navbar/navbar contents
+15: Enabled anchors the ability to go to different sites
+16: Changed the font awesome colors
+17: Enabled the checkout system to tally amount of product
+18: Created the effect of adding up and subtracting prices
+19: Incorporated a fontawesome icon in navbar
+20: Incorporated the get method in forms
+21: Changed all original images of website
+22: Featured seven new products within the site
+23: Enabled bottons within description pages to navigate to cart
+24: Implemented JSON as we discussed however would not be pulled :(
+25: Display the cards with 4x4x4 on main page
+26: Incorporated pricing in my cart page
