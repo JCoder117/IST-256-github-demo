@@ -1,0 +1,634 @@
+/*
+
+Timeless Template 
+
+http://www.templatemo.com/tm-517-timeless
+
+*/
+
+/*body changes #1*/
+body {
+    background-color: #2d2d2d;
+    font-family: "Play fair display";
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+/*heading 1 changed #2*/
+h1 {
+    font-family: "Play fair display";
+    color: #cecece;
+}
+
+/*heading 2 changed #3*/
+h2 {
+    font-family: "Play fair display";
+    color: #cecece;
+}
+
+/*heading 3 changed #4*/
+h3 {
+    font-family: "Play fair display";
+    color: #cecece;
+    font-size: 1.3rem;
+}
+
+
+/*added this for when cursor touches an anchor tag it is clickable #5*/
+a{
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+}
+
+/*changed border */
+.hr {
+    border-color: #b99a45;;
+    max-width: 100%;
+    height: 4px;
+    border-width: 4px;
+    border-radius: 50%;
+}
+
+/*Navbar background color 6*/
+.navbar {
+    background-color: #3b3f44;
+}
+
+/*Navbar text color 6*/
+.nav-link {
+    color: #cecece;
+    position: relative;
+    margin-left: 10px;
+}
+
+.nav-link:hover{
+    color: #b99a45;
+}
+
+.nav-link::after{
+    transition: all 0.4s;
+    color: #b99a45;
+}
+
+/*How long it will take for the color to appear*/
+.nav-link:hover::after {
+    content: '';
+    height: 2px;
+    width: 22%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*When the logo and text next to it is hovered over it is not clickable 7 */
+.navbar-brand {
+    color: #cecece;
+    pointer-events: none;
+}
+
+/* Changed the color of the menu bar(s) #8 */
+.navbar-toggler-icon,
+.navbar-toggler,
+.navbar-toggler.collapsed
+ {
+    margin-right: 5px;
+    padding-right: 6px;
+}
+
+
+/*Luxscape Logo #9 */
+.my-logo {
+    height: 60px;
+    width: 60px;
+    color: #b99a45;
+}
+
+
+/* Mission statement color change #10*/
+.mission-statement {
+    color: #cecece;
+}
+
+/*Destination font and lettering*/
+.Destination-lettering{
+    text-align: center;
+    color: #cecece;
+}
+
+/*Destination image border bootstrap*/
+.col-lg-8{
+    margin: 0 auto;
+}
+
+/*Destination Image rounded*/
+.rounded img{
+    display: block;
+    margin: 0 auto;
+}
+
+/*Card body for each card color change #11*/
+.card-body{
+    border-color: white;
+    background-color: white;
+    border-radius: inherit;
+}
+
+/*Card title and text changed to fit color scheme 12*/
+.card-title,
+.card-text {
+    font-family: "Play fair display";
+    color:#3b3f44;
+}
+
+.btn.btn-primary{
+    color: white;
+    border-color: #3b3f44;
+    background-color: #3b3f44;
+}
+
+/*my font awesome airplane car icon*/
+.fa-plane-departure {
+    color: #cecece;
+}
+
+/*Cart tracking*/ /*#is for the id -> id="cartItem"*/
+
+
+.cart-h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.your-cart-p{
+    color: #cecece;
+    font-size: 15px;
+}
+
+.cart-header,
+#total{
+    font-family: "Play fair display";
+    font-size: 10px;
+    color: #cecece;
+}
+
+#cartItem,
+#total {
+    color: #cecece;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.cart p{
+    height: 22px;
+    width: 22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 22px;
+    background-color: black;
+    color: #cecece;
+}
+
+.cart-container {
+    display: flex;
+    width:70%;
+    margin-bottom: 30px;
+}
+
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #4e555b;
+    margin-left: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+/*check over this part Im pretty sure I did not have to use this*/
+
+.foot{
+    display: flex;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #000000;
+}
+.box{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img.box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position:center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+button{
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: dodgerblue;
+}
+.car-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid blue;
+    border-radius: 3px;
+    margin: 10px 10px
+}
+
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #b99a45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/*my font awesome icons 13*/
+.fa-instagram {
+    color: #b60b6d;
+    font-size: 20px ;
+}
+.fa-twitter{
+    color: royalblue;
+    font-size: 20px;
+}
+.fa-facebook{
+    color:blue;
+    font-size: 20px;
+
+}
+.fa-tiktok{
+    color: black;
+    font-size: 20px;
+
+}
+
+
+.tm-site-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.tm-site-header {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 0;
+}
+
+#tm-video-loader {
+    border: 5px solid #f3f3f3;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.tm-video-container {
+    position: relative;
+    max-width: 1280px;
+    max-height: 640px;
+    overflow-y: hidden;
+}
+
+/*changed the text color in my new video #14*/
+.tm-video-text {
+    text-align: center;
+    color: #b99a45;
+}
+
+
+.tm-welcome-video {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    background-color: black;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.tm-video-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%);
+}
+.tm-video-text-overlay h1 {
+	font-size: 3.4rem;
+}
+
+/*Color updated*/
+.tm-welcome-text {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    font-size: 2rem;
+    color: #cecece;
+}
+
+
+.tm-video-iframe {
+    height: auto;
+}
+
+.tm-timeline-item {
+    margin-left: 70px;
+}
+
+.tm-timeline-item-inner {
+    display: flex;
+    align-items: center;
+}
+
+.tm-img-timeline {
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tm-timeline-connector {
+    width: 55px;
+    height: 3px;
+    background-color: #404040;
+}
+
+.tm-timeline-connector-vertical {
+    height: 60px;
+    width: 3px;
+    background-color: #404040;
+    margin-left: 260px;
+}
+
+.tm-timeline-description {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 35px 40px;
+    max-width: 712px;
+}
+
+.tm-section-mb {
+    margin-bottom: 85px;
+
+}
+
+.tm-section-mt {
+    margin-top: 85px;
+    margin-right: 70px;
+}
+
+.tm-contact-form {
+    max-width: 500px;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #666666;
+	color: #CCC;
+    background: transparent;
+    padding: 12px 15px;
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #CCCCCC;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #DDDDDD;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #DDDDDD;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.tm-btn-send {
+    border-radius: 0;
+    font-size: 1.1rem;
+    padding: 12px 50px;
+    background: transparent;
+    border: 1px solid #CCCCCC;
+    color: #CCCCCC;
+}
+
+.tm-btn-send:hover,
+.tm-btn-send:focus {
+    background: #CCCCCC;
+    color: #333333;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: #CCCCCC;
+	color: #FFF;
+    box-shadow: 0 0 0 0.2rem #cccccc14;
+}
+
+input,
+textarea,
+[contenteditable] {
+    caret-color: #FFFFFF;
+}
+
+p {
+    line-height: 1.9;
+}
+
+.tm-current-year,
+.text-center,
+.tm-text-gray,
+tm-copyright-text{
+    color: #cecece;
+
+}
+
+.mission-lettering {
+    text-align: center;
+    color: #cecece;
+}
+
+.form-lettering{
+    text-align: center;
+    color: #cecece;
+    padding-top: 20px;
+}
+
+.email,
+.password,
+.reset-button,
+.submit-button{
+    font-family: "Play fair display";
+    color: #cecece;
+    margin-left: 10px;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1310px;
+    }
+    .tm-container-2 {
+        max-width: 1170px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .tm-video-container {
+        max-width: 932px;
+        max-height: 466px;
+    }
+    .tm-video-text-overlay {
+        left: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    #google-map,
+    .tm-contact-form {
+        max-width: 100%;
+    }
+    .google-map-iframe {
+        width: 100%;
+    }
+    .tm-video-container {
+        max-width: 690px;
+        max-height: 345px;
+    }
+    .tm-video-text-overlay {
+        left: 45%;
+    }
+	.tm-video-text-overlay h1 {
+		font-size: 2.8rem;
+	}
+    .tm-timeline-item {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tm-timeline-item {
+        margin-left: 0;
+    }
+    .tm-video-container {
+        max-width: 510px;
+        max-height: 255px;
+    }
+    .tm-video-container,
+    .tm-welcome-video {
+        min-height: 220px;
+    }
+    .tm-video-text-overlay {
+        left: 25%;
+    }
+}
+
+@media (max-width: 584px) {
+    .tm-timeline-item-inner {
+        flex-direction: column;
+    }
+    .tm-timeline-connector {
+        width: 3px;
+        height: 55px;
+    }
+    .tm-timeline-connector-vertical {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 540px;
+    }
+    .tm-video-text-overlay {
+        left: 30%;
+    }
+    .tm-video-text-overlay h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .tm-video-container {
+        overflow-x: hidden;
+    }
+    .tm-welcome-video {
+        min-width: auto;
+        max-width: 100%;
+    }
+}
