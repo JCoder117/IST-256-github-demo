@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>LUXSCAPE</title>
+<!--
+
+Timeless Template 
+
+                        <i class="fa-regular fa-user"></i>
+
+
+http://www.templatemo.com/tm-517-timeless
+
+-->
+    <!-- load CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Google web font "PlayFair Display #1 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- https://getbootstrap.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Templatemo style -->
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <header class="text-center tm-site-header">
+                    <h1 class="pl-4 tm-site-title">LUXSCAPE</h1>
+                </header>
+            </div>
+        </div>
+
+
+
+
+        <!-- Navbar with icon-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <img src="img/luxscape.png" alt="luxscape" class="my-logo">
+                    Unleash Your Inner Explorer:
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="MissionStatement.html">Mission Statement</a>
+                        <a class="nav-link" href="Lido.html">Lido</a>
+                        <a class="nav-link" href="Metropolis.html">Metropolis</a>
+                        <a class="nav-link" href="Soiree.html">Soirée</a>
+                        <a class="nav-link" href="Legacy.html">Legacy</a>
+                        <a class="nav-link" href="Arboreal.html">Arboreal</a>
+                        <a class="nav-link" href="Veld.html">Veld</a>
+                        <a class="nav-link" href="Dune.html">Dune</a>
+                        <a class="nav-link" href="Form.html">Sign Up</a>
+                        <div class="cart">
+                            <a class="nav-link" href="Cart.html"><i class="fa-solid fa-plane-departure"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tm-video-container">
+                    <video id="tm-welcome-video" class="tm-welcome-video" autoplay loop muted="">
+                    <!-- my video below -->
+                        <source src="img/airplane.mp4" type="video/mp4">
+                        </video>
+                        <div id="tm-video-loader"></div>
+                        <div id="tm-video-text-overlay" class="tm-video-text-overlay">
+                            <h1>
+                                <div id="rotate" class="tm-video-text">
+                                    <div>Unlock Redefined Luxury.</div>
+                                    <div>Crafted for the Discerning Traveler.</div>
+                                    <div>An Unforgettable Journey Awaits.</div>
+                                    <div>LUXUSCAPE.</div>
+                                </div>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <hr class="hr">
+
+        <div class="container tm-container-2">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="tm-welcome-text">Luxscape: Where Dreams Become Reality</h2>
+                    <p class="mission-statement">Luxscape elevates travel beyond the ordinary. We curate bespoke journeys that ignite your sense of wonder, unlock exclusive experiences, and immerse you in unparalleled comfort. Through responsible travel practices and impeccable service, we craft memories that become cherished stories.</p>
+                </div>
+            </div>
+
+            <hr class="hr">
+            <br>
+            <!--container for cards this will evenly align them/space them the row will do that vertically-->
+            <div id="DestinationContainer" class="container" >
+                <div class="row gy-4">
+                    <h2>Destinations:</h2>
+
+                    <!--Card 1 Lido ButtonOne-->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/Turks.jpg" class="card-img-top" alt="Lido">
+                            <div class="card-body">
+                                <h5 class="card-title">Lido - $299 month (est.)</h5>
+                                <p class="card-text">Relax in turquoise and pristine sands.</p>
+                                <a href="Lido.html" id="ButtonOne" class="btn btn-primary" onclick="location.href='Lido.html'">Book Lido</a> <!-- Onclick-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 Metropolis ButtonTwo-->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/Metropolis.jpg" class="card-img-top" alt="Metropolis">
+                            <div class="card-body">
+                                <h5 class="card-title">Metropolis - $399 month (est.)</h5>
+                                <p class="card-text">Discover Your Urban Oasis</p>
+                                <a href="Metropolis.html" id="ButtonTwo" class="btn btn-primary" onclick="location.href='Metropolis.html'">Book Metropolis</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card 3 Soiree Nightlife ButtonThree-->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/dubai.jpg" class="card-img-top" alt="Soiree">
+                            <div class="card-body">
+                                <h5 class="card-title">Soirée - $499 per month (est.)</h5>
+                                <p class="card-text">Unveil Nights of Exquisite Revelry</p>
+                                <a href="Soiree.html" id=ButtonThree" class="btn btn-primary" onclick="location.href='Soiree.html'">Book Soirée</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+<hr class="hr">
+        <!-- Footer -->
+        <footer class="row mt-5 mb-5">
+            <div class="col-lg-12">
+                <p class="text-center tm-text-gray tm-copyright-text mb-0">Copyright &copy;
+                    <span class="tm-current-year">2024</span> Luxscape <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-tiktok"></i>
+                </p>
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="js/templatemo-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+
+    </script>
+<!--JSON Script not working tried implementing it for 5 hours and followed the video not sure as to why this is.
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: "services.json",
+            dataType: "json",
+            success: function(data) {
+                const services = data.services;
+                displayProducts(services);
+            }
+        })
+    })
+</script>
+-->
+</body>
+</html>
