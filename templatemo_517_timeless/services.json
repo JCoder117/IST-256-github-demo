@@ -1,0 +1,47 @@
+
+{
+  "services": [
+    {
+      "id":0,
+      "image": "img/Turks.jpg",
+      "title": "Lido",
+      "price": 299
+    },
+    {
+      "id":1,
+      "image": "img/Metropolis.jpg",
+      "title": "Metropolis",
+      "price": 399
+    },
+    {
+      "id":2,
+      "image": "img/dubai.jpg",
+      "title": "Soirée",
+      "price": 299
+    },
+    {
+      "id":3,
+      "image": "img/Landmarks.png",
+      "title": "Legacy",
+      "price": 499
+    },
+    {
+      "id":4,
+      "image": "img/Forest.jpg",
+      "title": "Arboreal",
+      "price": 199
+    },
+    {
+      "id":5,
+      "image": "img/Savannah.jpg",
+      "title": "Veld",
+      "price": 289
+    },
+    {
+      "id": 6,
+      "image": "img/Desert.jpg",
+      "title": "Dune",
+      "price": 199
+    }
+  ]
+}
